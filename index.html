@@ -6,9 +6,13 @@
     <meta name="keywords" content="alexandrovich, cv, resume">
     <meta name="description" content="Это сайт-резюме Дианы Александрович">
     <title>Alexandrovich resume</title>
+    <link rel="stylesheet" href="styls.css">
 </head>
 <body>
-    <img src="avatar.jpg" alt="Диана Александрович" width="200">
+    <div class="container">
+    <div class="info">
+    <img src="avatar.jpg" alt="Диана Александрович" class="avatar">
+    <div class="info-text">
     <h1> Диана Александрович </h1>
     <p>Я мама в декрете. Имею высшее педагогическое обазование <strong>(преподаватель 
         информатики и информационных технологий)</strong>. Но последние 2 года 
@@ -20,20 +24,27 @@
     <a href="https://vk.com/dianochka_1994" target="_blank" >VK</a>
     |
     <a href="https://xn--80affa3aj0al.xn--80asehdb/" target="_blank" >Telegram</a>
-    <h2>Мои хобби</h2>
-    <ol>
+</div>
+</div>
+
+   <div class="card bg-red">
+<h2>Мои хобби</h2>
+    <ol class="list">
         <li>Йога</li>
         <li>Готовка</li>
         <li>Путешествия</li>
     </ol>
+</div>
+
+ <div class="card bg-blue">
     <h2>Опыт работы</h2>
-    <table>
+    <table class="table">
         <thead>
-            <tr>
+            <!--<tr>
                 <th>Название</th>
                 <th>Должность</th>
                 <th>Год</th>
-            </tr>
+            </tr>-->
         </thead>
         <tbody>
             <tr>
@@ -53,27 +64,37 @@
         </tr>
         </tbody>
     </table>
-    <h2>Связаться со мной</h2>
-    <form action="/">
-    <div>
+</div>
+
+<div class="card bg-yellow">
+    
+        <form action="/" class="form">
+        <h2>Связаться со мной</h2>
+    
+        <div class="form-raw">
+        <div class="form-group">
         <label for="name">Ваше имя:</label>
         <input type="text" id="name" placeholder="Введите имя">
     </div>
-    <div>
+    <div class="form-group">
         <label for="email">Ваш email:</label>
         <input type="email" id="email" placeholder="Введите email">
     </div>
-    <div>
+</div>
+
+    <div class="form-group">
         <label for="message">Ваше сообщение</label>
-        <br>
         <textarea  id="message" cols="20" rows="5" placeholder="Введите сообщение..."></textarea>
     </div>
-    <input type="submit" value="Отправить!">
+    <input class="btn" type="submit" value="Отправить!">
 </form>
+</div>
+</div>
 <br>
 <br>
 <br>
 <br>
 <br>
+</div>
 </body>
 </html>
